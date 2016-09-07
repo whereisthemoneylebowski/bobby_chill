@@ -1,0 +1,556 @@
+@white: #ffffff;
+@black: #000000;
+@background-button: #F2A154;
+@background-footer: #1B1B1B;
+@background-hover: #454545;
+@background-main: #9C9C9C;
+@pinky-color: #FF8686;
+
+@keyframes secretref {
+	100% {
+		background-color: #EA0000;
+	}
+}
+
+@keyframes photohover {
+	25% {
+		height: 220px;
+	}
+	50% {
+		height: 230px;
+	}
+	100% {
+		height: 220px;
+	}
+}
+
+@keyframes popUpAnimation {
+	0% {
+		top: -200%;
+	}
+	50% {
+		top: 20%;
+	}
+	100% {
+		top: 10%;
+	}
+}
+
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	font-family: "Roboto", "Arial", sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+	background-color: #1B1B1B;
+}
+
+h1 {
+	font-size: 30px;
+	color: #F2A154;
+}
+
+h2 {
+	font-size: 18px;
+}
+
+.center-container {
+	width: 1024px;
+	display: block;
+	margin: 0 auto;
+}
+
+/*ссылочкинг*/
+
+a {
+	color: #F2A154;
+
+	transition:
+		all 0.2s linear;
+}
+
+a:hover {
+	color: #454545;
+}
+
+a:active {
+	color: lightblue;
+}
+
+/*ссылочкинг*/
+
+.btn {
+	padding: 15px 20px;
+	background-color: #F2A154;
+	color: #ffffff;
+	font-weight: bold;
+	border: none;
+	outline: none;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.btn:hover {
+	background-color: #454545;
+	color: #ffffff;
+}
+
+.btn:active {
+	background-color: #8E8E8E;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+/*headeeeeeeeeeer*/
+header {
+	min-height: 390px;
+	background: url('../img/bobbychill2.jpg') repeat-x center 75px;
+	background-color: #000000;
+	margin-bottom: 20px;
+}
+
+.main-header {
+	min-height: 45px;
+	padding: 10px 20px;
+	border-bottom: 5px solid #F2A154;
+	background-color: #010101;
+}
+
+.main-navigation {
+	float: left;
+	list-style: none;
+	font-size: 0px;
+	min-width: 400px;
+}
+
+.main-navigation ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+.main-navigation li {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.main-navigation a {
+	display: block;
+	color: #ffffff;
+	font-weight: bold;
+	padding: 15px 20px;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.main-navigation a:hover {
+	background-color: #454545;
+}
+
+.main-navigation a:active {
+	background-color: #8E8E8E;
+}
+
+.main-navigation .active {
+	display: block;
+	position: relative;
+	color: #ffffff;
+	font-weight: bold;
+	padding: 15px 20px;
+	font-size: 16px;
+	text-decoration: none;
+	background-color: #454545;
+}
+
+.main-navigation .secretref {
+	animation-name: secretref;
+	animation-duration: 0.8s;
+	animation-timing-function: linear;
+	animation-iteration-count: 2;
+	animation-direction: alternate;
+	animation-fill-mode: backwards;
+}
+
+/*ссылка с главной стр*/
+.home-icon a {
+	padding: 0px 20px;
+}
+
+.userBlock {
+	float: right;
+	font-size: 0px;
+}
+
+.login {
+	display: inline-block;
+	font-size: 16px;
+	vertical-align: top;
+}
+
+.pageDescription {
+	display: inline-block;
+	max-width: 200px;
+	min-height: 100px;
+	margin: 45px;
+	padding: 10px;
+	color: #ffffff;
+	border: 5px solid #F2A154;
+}
+
+.headerText {
+	font-weight: bold;
+	font-size: 30px;
+	color: #F2A154;
+}
+
+
+/*maaaaaaaaaaaaaain*/
+main {
+	min-height: 455px;
+	margin-bottom: 20px;
+	padding: 10px 20px;
+	flex-grow: 1;
+}
+
+.main-characters {
+	display: flex;
+	flex-wrap: wrap;
+	justigy-content: center;
+	align-items: center;
+
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 20px;
+	border: 3px solid #F2A154;
+}
+
+.main-characters img {
+	width: 30%;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	flex-grow: 1;
+}
+
+.main-characters p {
+	width: 50%;
+	margin-bottom: 20px;
+	flex-grow: 1;
+
+	padding: 20px;
+	border: 1px solid #F2A154;
+}
+
+.main-characters p::first-line {
+	font-size: 30px;
+	color: #F2A154;
+	text-indent: 0;
+}
+
+.main-characters img:nth-of-type(2) {
+	margin-left: 20px;
+	margin-right: 0;
+}
+
+.features {
+	display: flex;
+	flex-wrap: wrap;
+	justigy-content: center;
+	
+	padding: 20px;
+	border: 3px solid #F2A154;
+}
+
+.features-item {
+	flex-grow: 1;
+
+	transition: 1s;
+}
+
+.features-item:hover {
+	flex-grow: 4;
+}
+
+.photoreport {
+	width: 100%;
+	text-align: center;
+}
+
+.photoreport .photo {
+	background-size: contain;
+	margin: 20px auto;
+	width: 896px;
+	height: 640px;
+	background-color: rgba(0, 0, 0, 1);
+}
+
+.photoreport ul {
+	margin: auto;
+	padding: 20px;
+	width: 65%;
+	font-size: 0;
+	list-style: none;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.photo-miniature li {
+	display: inline-block;
+
+	width: 100px;
+	height: 100px;
+	cursor: pointer;
+	background-size: cover;
+	opacity: 0.5;
+	font-size: 10px;
+	vertical-align: top;
+	text-align: center;
+
+	transition: 0.7s;
+}
+
+/*классы для фотоотчета в JS*/
+
+.photo1 {
+	background: #F2A154 url('../img/kingofthehill3.jpg') no-repeat center center;
+}
+
+.photo2 {
+	background: #F2A154 url('../img/kingofthehill3_14(2).jpg') no-repeat center;
+}
+
+.photo3 {
+	background: #F2A154 url('../img/kingofthehill5_13(2).jpg') no-repeat center;
+}
+
+.photo4 {
+	background: #F2A154 url('../img/king-of-the-hill-and-anime.jpg') no-repeat center;
+}
+
+.photo5 {
+	background: #F2A154 url('../img/kingofthehill4.jpg') no-repeat center;
+}
+
+.photo6 {
+	background: #F2A154 url('../img/kingofthehill2.jpg') no-repeat center;
+}
+
+.photo-miniature .photo-miniature-active {
+	opacity: 1;
+	box-shadow: inset 0 0 0 3px rgba(242, 161, 84, 0.5);
+}
+
+
+/*fooooooooooooooter*/
+footer {
+	padding: 10px 20px;
+	height: 195px;
+	background-color: #000000;
+	color: #ffffff;
+}
+
+form>input {
+	display: inline-block;
+	vertical-align: top;
+	border: none;
+	outline: none;
+	color: #A0A0A0;
+	font-family: "Roboto", "Arial", sans-serif;
+	font-size: 16px;
+	padding: 15px 20px;
+}
+
+form>input:focus {
+	color: #000000;
+}
+
+.footer-contacts {
+	float: left;
+	margin-right: 50px;
+	width: 200px;
+}
+
+.footer-social {
+	float: left;
+	margin-right: 50px;
+	width: 200px;
+	text-align: center;
+}
+
+.footer-subscribe {
+	float: right;
+
+}
+
+.social-icon {
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	padding: 20px;
+	margin: 0px 2px;
+	font-size: 0px;
+	vertical-align: top;
+	text-decoration: none;
+
+	transition: 
+	background-color 0.5s;
+}
+
+.social-icon-fb {
+	background: #ffffff url('../img/facebook2_ICON.svg') no-repeat center;
+}
+
+.social-icon-fb:hover {
+	background-color: #3B5998;
+}
+
+.social-icon-google {
+	background: #ffffff url('../img/google2_ICON.svg') no-repeat center;
+}
+
+.social-icon-google:hover {
+	background-color: #D84B37;
+}
+
+.social-icon-twitter {
+	background: #ffffff url('../img/twitter2_ICON.svg') no-repeat center;
+}
+
+.social-icon-twitter:hover {
+	background-color: #00aced;
+}
+
+/*хуйня с нажатием кнопки, черный текст, зависит от инпута сверху*/
+.subscribe-form {
+	font-size: 0px;
+}
+
+.subscribe-form input {
+	font-size: 16px;
+}
+
+.subscribe-form .button:focus {
+	color: #ffffff;
+}
+
+
+/*затемняющий фон для всплывающих окон*/
+.modal-overlay-open {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	z-index: 10;
+}
+
+
+/*окно логин*/
+.modal-window {
+	display: none;
+}
+
+.modal-window-open {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	top: 10%;
+	right: 25%;
+
+	width: 450px;
+	height: 350px;
+	color: #ffffff;
+	background-color: #1B1B1B;
+	border-bottom: 10px solid #F2A154;
+	z-index: 30;
+	box-shadow: 6px 15px 48px -5px rgba(0,0,0,0.7);
+	font-size: 0;
+
+}
+
+.modal-window-open h2 {
+	display: block;
+	font-size: 20px;
+}
+
+.modal-window-open a {
+	display: inline-block;
+	font-size: 20px;
+	padding: 10px 50px;
+
+}
+
+.popUpAnimation {
+	animation-name: popUpAnimation;
+	animation-duration: 0.6s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+}
+
+/*окно карты*/
+.modal-content-map {
+	display: none;
+}
+
+.modal-content-map-open {
+	position: fixed;
+	top: 10%;
+	left: 23%;
+
+	display: block;
+	height: 500px;
+	z-index: 20;
+	box-shadow: 6px 15px 48px -5px rgba(0,0,0,0.7);
+	border: 5px solid #F2A154
+}
+
+/*закрывашка всплывающего окна*/
+.modal-crossClose {
+	display: none;
+}
+
+.modal-crossClose-open {
+	position: absolute;
+	top: 0;
+	right: -50px;
+
+	width: 25px;
+	height: 25px;
+	z-index: 20;
+	
+	font-size: 0;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+}
+
+.modal-crossClose-open::before,
+.modal-crossClose-open::after {
+	content: "";
+	position: absolute;
+	width: 25px;
+	height: 5px;
+	background-color: #F2A154;
+	border-radius: 1px;
+	z-index: 20; 
+}
+
+.modal-crossClose-open::before {
+	transform: rotate(45deg);
+}
+
+.modal-crossClose-open::after {
+	transform: rotate(-45deg);
+}

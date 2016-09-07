@@ -1,0 +1,35 @@
+.table-photoreport {
+	display: table;
+
+	min-width: 768px;
+	margin: auto;
+	border-spacing: 20px;
+	border-collapse: separate; 
+	text-align: center;
+}
+
+.table-photoreport ul {
+	display: table-row;
+}
+
+.table-photoreport li {
+	display: table-cell;
+
+	padding: 20px;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #454545;
+}
+
+.table-photoreport h1 {
+	display: table-caption;
+	caption-side: top;
+}
+
+.table-photoreport img:hover {
+	animation-name: photohover;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in;
+	cursor: pointer;
+}
