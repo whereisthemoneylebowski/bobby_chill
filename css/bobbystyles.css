@@ -212,6 +212,10 @@ main {
   border: 3px solid #F2A154;
 }
 
+.main-characters h2 {
+  align-self: flex-start;
+}
+
 .main-characters img {
   width: 30%;
   margin-right: 20px;
