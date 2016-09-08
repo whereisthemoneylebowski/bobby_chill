@@ -246,6 +246,8 @@ main {
 
 	padding: 20px;
 	border: 1px solid #F2A154;
+
+	transition: 0.5s;
 }
 
 .main-characters p::first-line {
@@ -254,7 +256,11 @@ main {
 	text-indent: 0;
 }
 
-.main-characters img:nth-of-type(2) {
+.main-characters p:hover {
+	border-color: rgba(255, 255, 255, 0.5); 
+}
+
+.main-characters img:nth-of-type(even) {
 	margin-left: 20px;
 	margin-right: 0;
 }
@@ -270,12 +276,11 @@ main {
 
 .features-item {
 	flex-grow: 1;
-
-	transition: 1s;
+	margin: 10px;
 }
 
-.features-item:hover {
-	flex-grow: 4;
+.features-item:nth-of-type(3n+1) {
+	flex-grow: 5;
 }
 
 .photoreport {
@@ -313,6 +318,80 @@ main {
 	text-align: center;
 
 	transition: 0.7s;
+}
+
+.secret-information {
+	display: flex;
+	flex-wrap: wrap;
+	justigy-content: center;
+	align-items: flex-start;
+
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 20px;
+}
+
+.secret-information p {
+	width: 50%;
+	margin-top: 0;
+	margin-bottom: 20px;
+	flex-grow: 1;
+
+	padding: 20px;
+	border: 1px solid #F2A154;
+	word-wrap: breakword;
+
+	transition: 0.5s;
+}
+
+.secret-information p:hover {
+	border-color: rgba(255, 255, 255, 0.5); 
+}
+
+.secret-information p::first-line {
+	font-size: 30px;
+	color: #F2A154;
+	text-indent: 0;
+	word-wrap: breakword;
+}
+
+.secret-information img {
+	width: 40%;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	flex-grow: 1;
+}
+
+.secret-information img:nth-of-type(even) {
+	margin-left: 20px;
+	margin-right: 0;
+}
+
+.bobby-dancing {
+	display: flex;
+	flex-wrap: wrap;
+	justigy-content: space-around;
+	align-items: center;
+
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 20px;
+	border: 1px solid #F2A154;
+}
+
+.bobby-dancing img {
+	flex-grow: 1;
+	width: 45%;
+	height: 45%;
+
+	margin: 10px;
+	filter: none;
+
+	transition: 1s;
+}
+
+.bobby-dancing img:hover {
+	-webkit-filter: hue-rotate(180deg) saturate(1.5) blur(1px);
 }
 
 /*классы для фотоотчета в JS*/
@@ -553,4 +632,10 @@ form>input:focus {
 
 .modal-crossClose-open::after {
 	transform: rotate(-45deg);
+}
+
+/*к кнопке отправить*/
+.button-clicked {
+	background-color: #454545;
+	color: #ffffff;
 }
