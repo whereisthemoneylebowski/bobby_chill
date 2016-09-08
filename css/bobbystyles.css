@@ -364,7 +364,7 @@ main {
 }
 
 .bobby-dancing img:hover {
-  -webkit-filter: hue-rotate(180deg) #000000 blur(1px);
+  -webkit-filter: hue-rotate(180deg) blur(1px);
 }
 
 .photo1 {
