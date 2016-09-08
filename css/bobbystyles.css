@@ -355,7 +355,7 @@ main {
   width: 45%;
   height: 45%;
   margin: 10px;
-  filter: none;
+  -webkit-filter: none;
 
   transition: 1s;
 }
