@@ -359,13 +359,12 @@ main {
   width: 45%;
   height: 45%;
   margin: 10px;
-  filter: none;
 
   transition: 1s;
 }
 
 .bobby-dancing img:hover {
-  filter: hue-rotate(180deg) #000000 blur(1px);
+  -webkit-filter: hue-rotate(180deg) #000000 blur(1px);
 }
 
 .photo1 {
