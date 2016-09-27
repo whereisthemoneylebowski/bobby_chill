@@ -399,7 +399,7 @@ main {
 
 footer {
   padding: 10px 20px;
-  height: 195px;
+  min-height: 195px;
   background-color: #000000;
   color: #ffffff;
 }
